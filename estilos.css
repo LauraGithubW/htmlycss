@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: lato;
+}
+:root{
+
+    --colortextos:#777777;
+    --colorbotones:#Bc2574;
+    --colorfondo:#A381F2;
+    --paddingsecciones: 60px 0;
+    --marginelementos:40px;
+    --colortitulos: #Bc2574;
+}
+.contenedor{
+
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow:hidden;
+    padding: var(--paddingsecciones);
+}
+img{
+
+    width:120px;
+    display: block;
+    
+}
+
+
+/*---------------------------------------------MENU------------------*/
+.menu-navegacion{
+    padding:0;
+
+    /*Hacemos que se haga flexible la caja con el contenido*/
+    display: flex;
+
+    /*Con justify-content se pone el menú a la derecha*/
+    justify-content:space-between;
+    height: 70px;
+
+    /*Conseguimos centrar los items dentro de la caja y que no se muestren pegados arriba
+    del todo*/
+
+    align-items: center;
+}
+
+.logo{
+    height: 50px;
+    
+}
+
+/*Con esto tocamos el estilo de la lista*/
+.enlaces li{
+
+    list-style: none;
+    /*Hacemos que los enlaces se coloquen en línea*/
+    display:inline-block;
+}
+
+.enlaces a{
+
+    text-decoration: none;
+    color:#000000;
+    /*Para separar los enlaces*/
+    padding-left: 10px;
+}
+
+/*-----------------HERO-------------------------*/
+
+
+/*Aquí tocamos los estilos de la sección y de la imagen de fondo que queremos colocar*/
+
+.hero{
+    text-align: center;
+    height: 500px;
+    background-image: url("./Imágenes/aryan-dhiman-iGLLtLINSkw-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contenedor-textos{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    /*Para que nos ponga en el texto uno debajo del otro, es decir, 
+    primero el h2, debajo el párrafo y debajo el botón*/
+    flex-direction: column;
+    /*Esto es para alinear los items en el centro de la pantalla*/
+    align-items: center;
+    /*Esto es para justificar el contenido en el centro*/
+    justify-content: center;
+    color: blanchedalmond;
+}
+.hero h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.hero p{
+    font-size:20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+
+}
+
+.boton{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding:15px 0;
+    background: var(--colorbotones);
+    color:#ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+
+/*--------------------------------------Main--------------------------------*/
+
+.titulo-seccion{
+
+    text-align: center;
+    color: var(--colortitulos);
+    font-size: 35px;
+}
+
+.copy{
+
+    text-align: center;
+    margin-top:20px;
+    color:var(--colortextos);
+
+
+}
+
+.beneficios{
+
+    margin-top: var(--marginelementos);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.beneficio{
+
+    font-size: 20px;
+    width:10em;
+    height:10em;
+    background-image: url(./Imágenes/aryan-dhiman-iGLLtLINSkw-unsplash.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border-radius: 50%;
+    color:#ffffff;
+
+
+}
+
+.projects{
+
+    background:#f2f2f2;
+}
+
+.contenedor-imagenes{
+    display: flex;
+    
+    justify-content: space-evenly;
+
+}
+
+.contenedor-imagenes img{
+
+width:30%;
+display:block;
+box-shadow: 0 0 8px rgb (0, 0, 0, .4);
+margin-bottom: var(--marginelementos);
+
+}
